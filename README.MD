@@ -15,7 +15,7 @@ Now you need to run that script. There is short help:
 **You have to take the -format parametr into a quotes "", eg. -format "%i. %w -> %c"**
 ```
 usage: parser.py [-h] [--header] [--special] [--dots]
-                 [-maxCharacters MAXCHARACTERS] [-format FORMAT [FORMAT ...]]
+                 [-maxCharacters MAXCHARACTERS] [-format FORMAT]
                  in out
 
 Program that convert a list of words to this one, which you can write in your
@@ -35,14 +35,13 @@ optional arguments:
   -maxCharacters MAXCHARACTERS
                         Max length of word, excluding dot, the default value
                         is 8
-  -format FORMAT [FORMAT ...]
-                        The format that will be used to write output. Possible
+  -format FORMAT        The format that will be used to write output. Possible
                         values are: 
 						%w - It will be replaced with the word, 
 						%c - Will be replaced with the calculator numbers, 
 						%i - Will be replaced with the order number, starting with 1 
 						%l - Will be replaced with the length of word.
-                        Default format is equal to: %w -> %c
+                        Default format is equal to: '%w -> %c'
 ```
 
 # What with the output?
