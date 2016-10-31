@@ -121,7 +121,6 @@ parser.add_argument('-format', type=str, help="The format that will be used to w
  %%l - Will be replaced with the length of word. Default format is equal to: %%w -> %%c", default=["%w", "->", "%c"], nargs='+')
 
 args = vars(parser.parse_args())
-print(str(args))
 startTime = datetime.now()
 
 translator = CalculatorTranslator(inFile=args['in'], outFile=args['out'], includeSpecials=args['special'], includeDots=args['dots'], format=" ".join(args['format']), maxCharacters=args['maxCharacters'], header=args['header'])
