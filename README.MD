@@ -12,7 +12,7 @@ It's simple. First you need the list of words with proper syntax:
 
 Now you need to run that script. There is short help:
 **It's recommend to take the -format parametr into a quotes "", eg. -format "%i. %w -> %c"**
-`
+```
 usage: parser.py [-h] [--header] [--special] [--dots]
                  [-maxCharacters MAXCHARACTERS] [-format FORMAT [FORMAT ...]]
                  in out
@@ -42,7 +42,7 @@ optional arguments:
 						%i - Will be replaced with the order number, starting with 1 
 						%l - Will be replaced with the length of word.
                         Default format is equal to: %w -> %c
-`
+```
 
 # What with the output?
 
@@ -52,7 +52,7 @@ Now get your calculator in hand, and type "0.7734". Great, now turn him by 180 d
 ![Hello](http://i.imgur.com/tYShXXx.jpg)
 
 # Examples
-An example list of polish words created by this script:
+An example list of polish words created by this script: [Click](https://gist.github.com/morsisko/26636a0c19bf9795d26aec9c9e6401ed)
 
 # License
 Tool is developed under MIT license
