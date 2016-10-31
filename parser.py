@@ -118,12 +118,13 @@ parser.add_argument('--special', action='store_true', help = "Use it, if you wan
 parser.add_argument('--dots', action='store_false', help = "Use it, if you don't want words that starts with '0.' on your list")
 parser.add_argument('-maxCharacters', type=int, help="Max length of word, excluding dot, the default value is 8", default=8)
 parser.add_argument('-format', type=str, help="The format that will be used to write output. Possible values are: %%w - It will be replaced with the word, %%c - Will be replaced with the calculator numbers, %%i - Will be replaced with the order number, starting with 1 \
- %%l - Will be replaced with the length of word. Default format is equal to: %%w -> %%c", default=["%w", "->", "%c"], nargs='+')
+ %%l - Will be replaced with the length of word. Default format is equal to: %%w -> %%c", default=["%w -> %c"])
 
 args = vars(parser.parse_args())
 startTime = datetime.now()
 
-translator = CalculatorTranslator(inFile=args['in'], outFile=args['out'], includeSpecials=args['special'], includeDots=args['dots'], format=" ".join(args['format']), maxCharacters=args['maxCharacters'], header=args['header'])
+#translator = CalculatorTranslator(inFile=args['in'], outFile=args['out'], includeSpecials=args['special'], includeDots=args['dots'], format=" ".join(args['format']), maxCharacters=args['maxCharacters'], header=args['header'])
+translator = CalculatorTranslator(inFile=args['in'], outFile=args['out'], includeSpecials=args['special'], includeDots=args['dots'], format=(args['format']), maxCharacters=args['maxCharacters'], header=args['header'])
 translator.mainLoop()
 
 stopTime = datetime.now() - startTime

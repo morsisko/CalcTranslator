@@ -12,7 +12,7 @@ It's simple. First you need the list of words with proper syntax:
 
 Now you need to run that script. There is short help:
 
-**It's recommend to take the -format parametr into a quotes "", eg. -format "%i. %w -> %c"**
+**You have to take the -format parametr into a quotes "", eg. -format "%i. %w -> %c"**
 ```
 usage: parser.py [-h] [--header] [--special] [--dots]
                  [-maxCharacters MAXCHARACTERS] [-format FORMAT [FORMAT ...]]
