@@ -11,6 +11,7 @@ It's simple. First you need the list of words with proper syntax:
 	on
 
 Now you need to run that script. There is short help:
+
 **It's recommend to take the -format parametr into a quotes "", eg. -format "%i. %w -> %c"**
 ```
 usage: parser.py [-h] [--header] [--special] [--dots]
